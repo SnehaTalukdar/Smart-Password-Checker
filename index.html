@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Password Strength Checker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <div class="icon">🔐</div>
+    <h1>Password Strength Checker</h1>
+    <p class="subtitle">Check your password security instantly.</p>
+
+    <label for="password">Enter a sample password</label>
+    <input type="password" id="password"
+           placeholder="Type a password">
+
+    <label class="show">
+      <input type="checkbox" id="toggle"> Show password
+    </label>
+
+    <div class="meter">
+      <div id="bar"></div>
+    </div>
+
+    <h2 id="strength">Strength: Not checked</h2>
+    <p id="message">Your password feedback will appear here.</p>
+
+    <h3>Security checklist</h3>
+    <ul>
+      <li id="length">✗ At least 12 characters</li>
+      <li id="upper">✗ Uppercase and lowercase letters</li>
+      <li id="number">✗ At least one number</li>
+      <li id="special">✗ At least one special character</li>
+    </ul>
+
+    <p class="note">Demo only. Never enter a real password.</p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
